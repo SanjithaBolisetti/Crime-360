@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crime Dashboard Information Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeTZlDxToMLUQlrghsL5ww_x4anMD7zNH6wg&s');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 1em 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5em;
+    }
+
+    .content {
+      padding: 2em;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      margin: 2em;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 1em;
+      color: #333;
+    }
+
+    .crime-update {
+      background-color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 1.5em;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    .crime-update h3 {
+      font-size: 1.5rem;
+      color: #444;
+      margin-bottom: 0.5em;
+    }
+
+    .crime-update p {
+      font-size: 1rem;
+      color: #555;
+      display: none; /* Hide the description initially */
+    }
+
+    .tips {
+      padding: 2em;
+      background-color: rgba(249, 249, 249, 0.7);
+      border-top: 2px solid #ccc;
+      border-radius: 10px;
+      margin: 2em;
+    }
+
+    .tips h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1em;
+      color: #333;
+    }
+
+    .tips ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .tips ul li {
+      margin-bottom: 0.8em;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      background-color: rgba(51, 51, 51, 0.7);
+      color: white;
+      padding: 1em 0;
+      margin-top: 2em;
+    }
+  </style>
+  <script>
+    // JavaScript to handle showing and hiding news details
+    document.addEventListener("DOMContentLoaded", function () {
+      const crimeUpdates = document.querySelectorAll(".crime-update");
+
+      crimeUpdates.forEach(function (update) {
+        update.addEventListener("click", function () {
+          const description = this.querySelector("p");
+          // Toggle the display property of the description
+          if (description.style.display === "block") {
+            description.style.display = "none";
+          } else {
+            description.style.display = "block";
+          }
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Crime Alert - Your Real-Time Crime Updates Across India</h1>
+    <p>Your go-to source for real-time crime data and safety updates</p>
+  </header>
+
+  <section class="content">
+    <h2>Latest Crimes in India</h2>
+
+    <article class="crime-update">
+      <h3>1.Minor girl's mutilated body found in cane field in UP's Lakhimpur Kheri(: Oct 11, 2023 16:22 IST)</h3>
+      <p>The mutilated body of a 13-year-old girl, who was allegedly tortured and killed, 
+        was found in a sugarcane field at a village in Uttar Pradesh’s Lakhimpur Kheri district.
+        According to sources, the girl went missing while returning from school. Her parents 
+        informed the police that she did not return till late at night, but the police did not register their complaint then.
+        Police then reached the spot, recovered the body, sent it for a postmortem examination, and registered a complaint.
+        Lakhimpur Kheri Superintendent of Police (SP) Ganesh Prasad Saha reached the post, investigated the area, and formed 
+        three investigation teams.The victim’s mother claimed that police inaction led to her death. She said that had the 
+        police registered her complaint on time, they could have saved the girl, who was missing for two days.The SP said,
+        “Prima facie, it looks like the girl was beaten to death as a lot of injury marks are visible, but we will figure out 
+        the facts after the post-mortem examination. We have engaged surveillance teams and teams from the nearby police stations. 
+        We are making all efforts to uncover the truth and people are also being questioned.”“The family members have been talked to. 
+        They are not taking anyone's name right now,” he added</p>
+    </article>
+
+    <article class="crime-update">
+      <h3>2.Rajasthan man pours acid on daughter-in-law over domestic dispute, case filed(Oct 11, 2023 13:53 IST)</h3>
+      <p>
+        A man allegedly poured acid on his daughter-in-law over a domestic fight in Rajasthan's Hanumangarh district. 
+        The woman, Hasmat Bano, suffered 30 per cent burn injuries and is undergoing treatment at a government hospital.
+        Hasmat Bano, in her complaint, said that her father-in-law Ramzan Khan and her brother-in-law's family also live with them. 
+        Ramzan often used to abuse and pick up fights with her.On October 8, when her husband Harun and brother-in-law were away for
+        work, she and her sister were at home with her children. Ramzan barged into the house and threw acid on her. 
+        A few drops of acid also spilled over Bano's children and nephew.Feared, they raised an alarm, but Ramzan 
+        threatened to return with more acid. They then locked the gate and raised an alarm from the rooftop, alerting 
+        their neighbours.They were then rushed to the hospital for treatment.Police have registered a case and further investigation is underway.
+      </p>
+    </article>
+
+    <article class="crime-update">
+      <h3>3.UP girl kidnapped from village, raped for 2 months; rescued(Ballia,UPDATED: Oct 11, 2023 15:08 IST)</h3>
+      <p>A 17-year-old girl was kidnapped from the Ubhaon area of Uttar Pradesh's Ballia district and was taken to Karnataka,
+         where she was raped for almost two months. She was rescued by police, officials said on Wednesday.The accused man 
+         was also arrested on Tuesday and sent to jail, they said.The girl was allegedly abducted by a 20-year-old man from 
+         her village on the night of August 14. On the complaint of the girl's mother, a case was registered under sections 
+         363 (kidnapping) and 366 (kidnapping or inducing a woman to compel for marriage) of the Indian Penal Code (IPC) on 
+         September 11, Ubhaon SHO Rajiv Mishra said.On Tuesday, the police rescued the girl from near Bilthra Roadways and 
+         arrested the accused, he said.In her statement to the police, the girl said the accused kidnapped and took her to 
+         Karnataka where he raped her for almost two months, the officer said. Based on the statement, the police have added 
+         Section 376 (rape) of the IPC and provisions of the Protection of Children from Sexual Offenses (POCSO) Act in the case, 
+         he added.
+      </p>
+    </article>
+
+    <article class="crime-update">
+      <h3>4.Dozens of mobile phones stolen during power cut at Gurugram's Sunburn Festival(Gurugram,UPDATED: Oct 11, 2023 08:19 IST)</h3>
+      <p>
+        More than two dozen mobile phones were stolen at a music festival being held at Backyard Sports Club in Gurugram, police said on Tuesday.
+        The incident happened Sunday at the Sunburn Festival during a power trip, they said.According to police, there were about 10,000 people 
+        at the venue when suddenly a power trip happened and when it was restored several patrons found their phones missing.Police apprehended 
+        12 suspects from the spot and recovered two stolen mobiles from them, they said.Sector 65 Police Station late Sunday night received 
+        complaints from seven people, who claimed their mobile phones were stolen from the festival."We have received complaints from seven 
+        people only... a team is tracking them. In a prompt action, police apprehended 12 suspects and recovered two stolen mobiles from their 
+        possession," Siddhant Jain, DCP, South, said.Himanshu Vijay Singh, a resident of Noida in Uttar Pradesh, said both he and his wife 
+        Awantika Poddar lost their mobile phones at the festival.In his complaint to the police, he named Lakshay Rawal, Arjun Kachroo, 
+        Soumya Jyoti Halder, Sarthak Sharma, and Karan Chauhan as only a handful of those who lost their phones at the music festival.Shaurya 
+        Gupta told police that he was in the VIP lane at the event with his three friends when at 8.20 pm, one of them said his mobile was missing. 
+        Since it was dark, he started searching for his mobile using his own mobile's flash light, but could not find it.At 8.40, Gupta too found 
+        his phone missing.
+
+      </p>
+    </article>
+  </section>
+
+  <section class="tips">
+    <h2>Crime Prevention Tips</h2>
+    <ul>
+      <li>Avoid isolated areas, especially at night, and stay alert to your surroundings.</li>
+      <li>Keep emergency contact numbers saved and easily accessible.</li>
+      <li>Ensure your personal information is secure, both online and offline.</li>
+      <li>Report suspicious activities immediately to law enforcement.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Tech Trojans. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>
