@@ -43,7 +43,7 @@ Crime 360 is a comprehensive crime tracking platform designed to provide real-ti
 3. Open your web browser and navigate to `http://127.0.0.1:5000/`.
 
 ## Usage
-- Register or log in to your account to access personalized alerts and safety tips.
+- Utilize the platform's interactive dashboards to analyze crime statistics and visualize trends over time, helping you make informed decisions about safety in your community..
 - Explore real-time crime data and predictive analytics to understand crime trends in your area.
 
 ## Contributing
